@@ -1,29 +1,137 @@
-/*CSS Flags*/
+/*Giulia Zefilippo 3179987
+Interactive Media Web - CSS Flags*/
 .flag {
 	display:grid;
 }
-.flag-sweden {
+/*Start of Sweden Flag*/
+.flag-sweden{
 	width: 760px;
 	height: 475px;
+	grid-template-columns: 200px 75px 485px;
+	grid-template-rows: 200px 75px 200px;
 	border: 1px solid black;
 }
-/*.flag-finland {
+.flag-sweden div{
+	/*border: 2px solid black;*/
+}
+.grid-item-yellow-strip{
+	background-color: #FECD00;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 3;
+}
+.grid-item-yellow{
+	background-color:#FECD00;
+}
+.grid-item-swed-blue{
+	background-color:#006AA8;
+}
+/*End of Sweden Flag*/
+
+/*Start of Finland Flag*/
+.flag-finland {
 	width: 760px;
-	height: 549px;
-	border: 1px solid black;
-}*/
-/*.flag-denmark {
+	height: 548px;
+	grid-template-columns: 211px 126px 423px;
+	grid-template-rows: 211px 126px 211px;
+	border: 1px solid #000000;
+}
+.flag-finland div{
+	/*	border: 2px solid black;*/
+}
+.grid-item-fin-blue-strip{
+	background-color: #003580;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 3;
+}
+.grid-item-white{
+	background-color:#FFFFFF;
+}
+.grid-item-fin-blue{
+	background-color:#003580;
+}
+/*End of Finland Flag*/
+
+/*Start of Denmark Flag*/
+.flag-denmark {
 	width: 760px;
-	height: 626px;
-	border: 1px solid black;
-}*/
-/*.flag-iceland {
+	height: 625px;
+	grid-template-columns: 268px 89px 403px;
+	grid-template-rows: 268px 89px 268px;
+	border: 1px solid #000000;
+}
+.flag-denmark div{
+	/*border: 1px solid black;*/
+}
+.grid-item-den-wh-strip{
+	background-color: #FFFFFF;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 3;
+}
+.grid-item-den-red{
+	background-color:#DA291C;
+}
+.grid-item-den-wh{
+	background-color:white;
+}
+/*End of Denmark Flag*/
+
+/*Start of Iceland Flag*/
+.flag-iceland {
 	width: 760px;
 	height: 547px;
 	border: 1px solid black;
-}*/
-/*.flag-giuland {
+	grid-template-columns: 212px 31px 61px 31px 425px;
+	grid-template-rows: 212px 31px 61px 31px 212px;
+}
+.flag-iceland div{
+	/*border: 1px solid black;*/
+}
+.grid-item-ice-blue{
+	background-color:#003087;
+}
+.grid-item-ice-blue1{
+	grid-row: 5 / span 5;
+	background-color:#003087;
+}
+.grid-item-ice-wh1{
+	grid-column: 2;
+	grid-row: 1 / span 2;
+}
+.grid-item-ice-red-strip{
+	grid-column: 3;
+	grid-row: 1 / span 5;
+	background-color:#D22630;
+}
+.grid-item-ice-wh2{
+	grid-column: 4;
+	grid-row: 1 / span 2;
+}
+.grid-item-ice-red1{
+	grid-column: 1 / span 2;
+	background-color:#D22630;
+}
+.grid-item-ice-red2{
+	grid-column: 4 / span 2;
+	background-color:#D22630;
+}
+.grid-item-ice-wh3{
+	grid-column: 1 / span 2;
+}
+.grid-item-ice-wh4{
+	grid-column: 4 / span 2;
+}
+.grid-item-ice-white{
+	background-color:white;
+}
+/*End of Iceland Flag*/
+
+/*Start of Giuland Flag*/
+.flag-giuland {
 	width: 786px;
 	height: 442px;
 	border: 1px solid black;
-}*/
+	grid-template-columns: 90px, 68px, 90px, 137px, 125px, 151px, 125px;
+}
+.flag-giuland div{
+	border:1 px solid black;
+}
