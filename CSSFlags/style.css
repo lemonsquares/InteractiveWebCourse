@@ -130,8 +130,31 @@ Interactive Media Web - CSS Flags*/
 	width: 786px;
 	height: 442px;
 	border: 1px solid black;
-	grid-template-columns: 90px, 68px, 90px, 137px, 125px, 151px, 125px;
+	grid-template-columns: 131px 131px 131px 131px 131px 131px;
+	grid-template-rows: 176.3px 88.4px 88.4px 88.4px;
+	background-image: linear-gradient(to bottom right, #50F026, #D79EF0, #35CBDA);
 }
-.flag-giuland div{
-	border:1 px solid black;
+.grid-item-green{
+	background-color: #80FF79;
 }
+.grid-item-pink{
+	grid-column: 1 / span 2;
+	background-color: #E5B6FF;
+}
+.grid-item-pink2{
+	grid-column: 4 / span 2;
+	background-color: #E5B6FF;
+}
+.grid-item-blue{
+	background-color:#38D9AA;
+	grid-row: ;
+}
+.grid-item-pink3{
+	background-color:#E5B6FF;
+	grid-column: 2 / span 2;
+}
+.grid-item-pink4{
+	background-color:#E5B6FF;
+	grid-column: 5 / span 2;
+}
+	/*End of Giuland Flag*/
