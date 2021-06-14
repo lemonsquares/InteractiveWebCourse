@@ -1,0 +1,243 @@
+/*CSS Typeface Stylesheet*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
+    height: 100%;
+/*     background-color: white; */
+}
+.grid-item{
+    width: 100%;
+    height: 100%;
+/*    border: 1px solid black;*/
+}
+/* Styling */
+ .solid{
+   background-color: red;
+} 
+.triangle-topleft {
+      width: 0;
+      height: 0;
+      border-top: 58px solid red;
+      border-right: 40px solid transparent;
+}
+.triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 58px solid red;
+      border-left: 40px solid transparent;
+    }
+.triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid red;
+      border-right: 41px solid transparent;
+}
+.triangle-bottomright {
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid red;
+      border-left: 41px solid transparent;
+}
+.bottomleft{
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid red;
+      border-right: 40px solid transparent;
+      border-left: 20px solid red;
+      /*   Transform rotateZ 40 degrees */
+      transform:perspective(2300px)
+        rotateZ(40deg)
+      transform-origin: center center;
+}
+.topleft {
+      width: 0;
+      height: 0;
+      border-top: 58px solid red;
+      border-right: 47px solid transparent;
+}
+.letter-a {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid black; /*feel free to remove or hide this rule */
+  position: relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-b {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid black; /*feel free to remove or hide this rule */
+  position: relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-c {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-d {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-e {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-f {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-g {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-h {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-i {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-j {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-k {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-l {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-m {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+ /* border:1px solid #000;*/ /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-n {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-o {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-p {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-q {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-r {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-s {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-t {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-u {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-v {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-w {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-x {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-y {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+.letter-z {
+  width:200px; /*resize as you see fit */
+  height:290px; /*resize as you see fit */
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  border:1px solid #000; /*feel free to remove or hide this rule */
+  position:relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}
+
+
