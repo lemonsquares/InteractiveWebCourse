@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+/*Container to hold all iframes*/
+.box-container{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+	position: relative;
+	grid-column: 1 span 4;
+}
+/*Aspect ratio of the frame-container 16 x 9*/
+.frame-container{
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative;
+}
+.iframe-container iframe{
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+/*I used this website for iframe reference
+https://www.benmarshall.me/responsive-iframe-generator*/

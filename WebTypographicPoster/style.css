@@ -8,16 +8,17 @@ body{
 	font-family: source-sans-pro, Arial, sans-serif;
 }
 .grid{
-		display: grid;
-			grid-template-columns: repeat(3,33.33%);
-			/*border: 1px solid black;*/
+	display: grid;
+	grid-template-columns: repeat(3,33.33%);
+	border: 2px solid black;
 }
 .grid div {
-	/*border: 1px solid black;*/
-	}
+	border: 1px solid black;
+}
 .organization-title, .series-title, .write-up {
 		grid-column-start: 1;
 		grid-column-end: span 3;
+		border: 1px solid black;
 }
 .organization-title{
 	font-weight: 600;
@@ -60,6 +61,27 @@ body{
 	font-style: normal;
 	font-size: 1em;
 }
+/* Color Theme Swatches in Hex */
+/*Red, Blue, White, Yellow, Black*/
+.Yellow-blue-Red-1-hex { color: #BB2020; }
+.Yellow-blue-Red-2-hex { color: #061130; }
+.Yellow-blue-Red-3-hex { color: #FEFFFF; }
+.Yellow-blue-Red-4-hex { color: #FFEB4D; }
+.Yellow-blue-Red-5-hex { color: #121317; }
+
+/* Color Theme Swatches in RGBA */
+.Yellow-blue-Red-1-rgba { color: rgba(187, 32, 32, 1); }
+.Yellow-blue-Red-2-rgba { color: rgba(6, 17, 48, 1); }
+.Yellow-blue-Red-3-rgba { color: rgba(254, 255, 255, 1); }
+.Yellow-blue-Red-4-rgba { color: rgba(255, 235, 77, 1); }
+.Yellow-blue-Red-5-rgba { color: rgba(18, 19, 23, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Yellow-blue-Red-1-hsla { color: hsla(0, 70, 42, 1); }
+.Yellow-blue-Red-2-hsla { color: hsla(224, 77, 10, 1); }
+.Yellow-blue-Red-3-hsla { color: hsla(180, 100, 99, 1); }
+.Yellow-blue-Red-4-hsla { color: hsla(53, 100, 65, 1); }
+.Yellow-blue-Red-5-hsla { color: hsla(228, 12, 8, 1); }
 
 
 /*	@media (max-width: 991px){
