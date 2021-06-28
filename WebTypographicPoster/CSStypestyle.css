@@ -1,0 +1,65 @@
+/*CSS Typeface Stylesheet*/
+
+.lettergrid{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
+    height: 100%;
+      --main-bg-color: #BB2020;
+}
+.lettergrid-item{
+    width: 100%;
+    height: 100%;
+}
+/* Styling */
+ .solid{
+   background-color: var(--main-bg-color);
+} 
+.triangle-topleft {
+      width: 0;
+      height: 0;
+      border-top: 58px solid var(--main-bg-color);
+      border-right: 40px solid transparent;
+}
+.triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 58px solid var(--main-bg-color);
+      border-left: 40px solid transparent;
+    }
+.triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid var(--main-bg-color);
+      border-right: 41px solid transparent;
+}
+.triangle-bottomright {
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid var(--main-bg-color);
+      border-left: 40px solid transparent;
+}
+.bottomleft{
+      width: 0;
+      height: 0;
+      border-bottom: 58px solid var(--main-bg-color);
+      border-right: 40px solid transparent;
+      border-left: 20px solid var(--main-bg-color);
+      /*   Transform rotateZ 40 degrees */
+      transform:perspective(2300px)
+        rotateZ(40deg)
+      transform-origin: center center;
+}
+.topleft{
+      width: 0;
+      height: 0;
+      border-top: 58px solid var(--main-bg-color);
+      border-right: 47px solid transparent;
+}
+.letter{
+  width:200px;
+  height:290px; 
+  display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+  position: relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+}

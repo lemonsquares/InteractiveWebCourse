@@ -1,0 +1,7 @@
+@font-face{
+    font-family:"jolana-regular";
+    src:url("https://dafonttop.com/wp-data/j/293/293/file/jolana.regular.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/j/293/293/file/jolana.regular.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/j/293/293/file/jolana.regular.ttf") format("truetype");
+}
+span.font0{font-family:"jolana-regular";font-size:50px;text-transform:none;}
