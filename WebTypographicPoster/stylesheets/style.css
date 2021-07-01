@@ -31,7 +31,7 @@ a:hover {
 	margin-left: 150px;
 	grid-template-columns: 170px 140px 170px 140px 170px 140px;
 	align-items: flex-end;
-	font-family: jolanaregular, impact, sans-serif;
+	font-family: jolana-regular, impact, sans-serif;
 	font-size: 2em;
 	color: #bb2020;
 }
@@ -82,10 +82,9 @@ a:hover {
 	line-height: 3em;
 }
 .event-title {
-	font-family: jolanaregular, impact, sans-serif;
+	font-family: jolana-regular, impact, sans-serif;
 	font-style: normal;
 	font-size: 24px;
-	/*padding-bottom: 10px;*/
 	border-bottom: 3px solid #bb2020;
 }
 .name {
@@ -97,7 +96,7 @@ a:hover {
 		font-size: 10px;
 		margin: 34px;
 	}
-	h1 {
+	h2 {
 		font-size: 12vw;
 		padding-bottom: 20px;
 	}
