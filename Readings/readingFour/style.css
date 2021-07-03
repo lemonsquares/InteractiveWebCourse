@@ -1,0 +1,39 @@
+/*styling of metaphor*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 50px;
+}
+p{
+	padding: 10px;
+}
+.machine{
+	display: grid;
+	grid-template-columns: 150px 700px 150px;
+	border: 10px dashed black;
+	border-radius: 50px;
+	width: 1000px;
+	height: 100%;
+}
+.spinny{
+padding: 10px;
+}
+.spinny:hover{
+	animation: spin 1s ease-in-out infinite alternate;
+}
+@keyframes spin{
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+.fallback { 
+  display: none;
+}
+.no-svg .fallback { 
+  background-image: url('assets/gear43.png'); 
+}
