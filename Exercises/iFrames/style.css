@@ -13,7 +13,6 @@ html, body{
 	display: grid;
 	grid-template-columns: repeat(5, 20%);
 	position: relative;
-	grid-column: 1 span 4;
 }
 /*Aspect ratio of the frame-container 16 x 9*/
 .frame-container{
