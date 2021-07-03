@@ -13,8 +13,8 @@ body{
 }
 /*Text Styling*/
 h1 {
-	font-family: 'lust-display', Times New Roman, serif;
-	font-weight: 400;
+	font-family: lust, Times New Roman, serif;
+	font-weight: 700;
 	font-style: italic;
 	color: #000000;
 	font-size: 12vw;
