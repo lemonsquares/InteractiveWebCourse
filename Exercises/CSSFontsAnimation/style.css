@@ -17,8 +17,9 @@ h1 {
 	font-weight: 700;
 	font-style: italic;
 	color: #000000;
-	font-size: 12vw;
-	line-height: 14vw;
+	font-size: 14vw;
+	line-height: 12vw;
+	padding-bottom: 14vw;
 }
 /*Styling for Animation Font*/
 .content-jump h2{
@@ -120,10 +121,6 @@ span{
 }
 .red{
 	color: red;
-	/*	animation-name: fading-letters;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;*/
 		animation: fading-letters 1s infinite alternate;
 	}
 	.blue{
@@ -131,24 +128,15 @@ span{
 		animation: fading-letters 1s infinite alternate;
 		animation-delay: 100ms;
 	}
-	/*.blue:hover{
-		color: green;
-		}*/
 		.yellow{
 			color: yellow;
 			animation: fading-letters 1s infinite alternate;
 		}
-	/*.yellow:hover{
-		color: pink;
-		}*/
 		.green{
 			color: limegreen;
 			animation: fading-letters 1s infinite alternate;
 			animation-delay: 200ms;
 		}
-	/*.green:hover{
-		color: red;
-		}*/
 		.pink{
 			color: hotpink;
 			animation: fading-letters 1s infinite alternate;
@@ -159,13 +147,11 @@ span{
 			display: grid;
 			grid-template-columns: repeat(3,33.33%);
 			grid-template-rows: 40% 40% 20%;
-			/*border: 1px solid black;*/
-			/*height: 1000px;*/
 		}
 		/*Testing purposes*/
-		/*.grid div {
+		.grid div {
 	border: 1px solid black;
-	}*/
+	}
 	/*Defining header and footer section*/
 	.header, .footer{
 		grid-column-start: 1;
@@ -178,7 +164,7 @@ span{
 			margin: 34px;
 		}
 		h1{
-			font-size: 12.5vw;
+			font-size: 10vw;
 			padding-bottom: 20px;
 		}
 		.grid{
