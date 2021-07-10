@@ -51,8 +51,9 @@ a{
     color: var(--white);
 }
 a:hover{
-    cursor: pointer;
-    text-decoration: none;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
 }
 /*link styling exception*/
 a:not(.section-heading){
@@ -71,10 +72,6 @@ p{
    text-indent: 50px;
 }
 
-#m2{
- margin: 10px;
-}
-
 /*MAIN GRID SETTINGS*/
 .sections{
   display:grid;
@@ -82,10 +79,12 @@ p{
   grid-template-rows: 100px 300px 300px;
   width:100%;
   height:100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   position: relative;
+  grid-column: ;
+  
 }
 .section-item{
     width: 100%;
@@ -97,47 +96,59 @@ p{
     align-items: center;
     justify-content: center;
     position: relative;
-    /*grid-row: 2 / span 3;*/
 }
 .top-panel{
     grid-column: 1 / span 3;
     font-style: normal;
 }
-.home{
-}   
-.inside-box{
-    width:250px;
-    height:250px;
+.inside{
+    width:200px;
+    height:200px; 
     border-radius: 5px;
-    background-color: var(--lightgreen);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-image: url(""); */
+}
+.inside-active{
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transition: transform .45s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgreen);
+}
+.inside-active:hover{
+    transform: perspective(500px) rotateY(40deg);
 }
 .center-align{
     padding-left: 1em;
 }
+
 @media (max-width: 992px){
     body{
         font-size: 10px;
-        margin: 50px;
+        margin: 40px;
     }
     h1{
-        font-size: 8vw;
+        font-size: 7vw;
     }
     h2{
         font-size: 2vw;
     }
-    .side-panel{
-        font-size: 4vw;
-        writing-mode: horizontal-tb;
-    }
+
     .sections{
         width: 50%;
         display: block;
     }
-    .inside-box{
-        margin: 20px 10px;
+    .inside{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .home{
+        padding-top: 20px;
     }
 }

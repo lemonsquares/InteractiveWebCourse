@@ -41,7 +41,7 @@ a{
     color: var(--white);
 }
 a:hover{
-    cursor: pointer;
+    cursor: not-allowed;
     text-decoration: line-through;
     text-decoration-style: wavy;
 }
