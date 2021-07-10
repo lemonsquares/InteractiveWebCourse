@@ -1,28 +1,72 @@
-<!-- Interactive Site -->
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Title</title>
-	    <!-- p5 Libraries -->
-	    <script type="text/javascript" src="scripts/lib/p5.js"></script>
-	    <script type="text/javascript" src="scripts/lib/p5.play.js"></script>
-	    <!-- Jquery -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	   	<!--  style sheet -->
-	    <link rel="stylesheet" type="text/css" href="style.css">
-	<body>
-		<div class="box-shapes">
-			<div class="square"></div>
-			<div class="circle"></div>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hover</title>
+	<!-- Javascript -->
+	<script src="scripts\jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="scripts\hoverPreview.js" type="text/javascript"></script>
+	<script src="scripts\progress.js" type="text/javascript" async></script>
+	<!-- Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/ljx1niv.css">
+</head>
+<body>
 
 
+  <!-- The HOVER and opening two text boxes that begin the experience - the text has interactions embedded in it -->
+<div id = "EntryHover">
+	<h1>HOVER</h1>
+</div>
+<div class = "hoverWindow" id = "TextWindow1">
+<p>Hovering is a versitile tool for presenting additional information, and to indicate possible interactions on the page.</p>
+<p>For instance hovering over words in a block of text can indicate <a class="Interactive" id ="InteractionsButton">Interactions.</a></p>
+</div>
+<div class = "hoverWindow" id = "TextWindow2">
+<p>Hovering is context sensitive method of communicating information to the user; it <a class="Interactive" id="RevealsButton">reveals</a> things that were previously hidden.</p> 
+</div>
 
 
-		</div>
-	<!-- Canvas p5 Sketch -->
-<!--     <script type="text/javascript" src="scripts/sketch.js"></script> -->
+  <!--  The flightlight model and spotlight effect that followes the mouse around (begins not following) -->
+<div id = "flashLight">
+    <img id="FL-model"  src="assets\flashLight-small.png" alt="" />
+    <img id="darkness" src="assets\Flashlight-Darkness.png" alt="" />
+</div>
 
-	</body>
+
+<!-- Everything in the "Room" -->
+<div id="roomLayout" class="layout">
+	<!-- the invisible darkness that is pulled back to reveal the moonlight shining on the floor -->
+	<img id="blackoutCurtainLeft" src="assets\blackoutCurtain.png" alt=""/>
+	<img id="blackoutCurtainRight" src="assets\blackoutCurtain.png" alt=""/>
 	
+	
+	<!-- The light pool on the floor and the flashlight that you pickup -->
+	<img id="flashlightOff" src="assets\flashLightOff-small.png" alt=""/>
+	<img id="windowLight" src="assets\windowLight.png" alt=""/>
+	
+	
+    
+	<!-- stuff in the room -->
+    <img id="window" src="assets\window.png" alt=""  class="nonInteractive"/>
+    <img id="moon" src="assets\moon.png" alt=""  class="nonInteractive"/>
+  
+    
+	<!-- The bookcase has several interactive divs in it that show you book titles (rel is the text that is displayed) -->
+	<div id="bookcase" class="nonInteractive">
+		<img src="assets\bookcase.png" alt="" />
+		<div id="bookHovercraft" class="hoverableText" rel="Hovercraft Design"  ></div>
+		<div id="bookHoverfly" class="hoverableText" rel="The life of Hoverflies"  ></div>
+		<div id="bookJetpack" class="hoverableText" rel="Jetpacks are cool."  ></div>
+	</div>
+	
+    <img id="door" src="assets\door.png" alt=""  class="nonInteractive"/>
+    <img id="desk" src="assets\desk.png" alt=""  class="nonInteractive"/>
+    <img id="bookcaseHighlights" src="assets\bookcaseHighlights.png" alt=""  class="nonInteractive"/>
+    <img id="doorHighlights" src="assets\doorHighlights.png" alt=""  class="nonInteractive"/>
+    <img id="deskHighlights" src="assets\deskHighlights.png" alt=""  class="nonInteractive"/>
+</div>
+
+</body>
 </html>
+

@@ -1,35 +1,260 @@
-html, body {
-  margin: 0;
-  padding: 0;
+*{
+	margin:0;
+	padding:0;
 }
-/*canvas {
-  display: block;
-}*/
-.square{
-  width: 100px;
-  height: 100px;
-  background-image: url("https://picsum.photos/100/100");
-  filter: invert(70%);
+body {
+	width: 1100px;
+	height: 680px;
+	background-color: black;
+	font-family: mrs-eaves, serif;
+	font-weight: 400;
+	font-style: normal;
+	overflow: hidden;
+}
+
+/* HOVER */
+#EntryHover
+{
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 100px;
+	left: 60%;
+    z-index: 5;
+}
+
+/* The two starting text boxes */
+.hoverWindow
+{
+	font-size: 20px;
+	color: black;
+	position: absolute;
+  z-index: 6;
+	padding: 10px;
+	background-color: #BFBFBF;
+	border-radius: 10px;
+}
+#TextWindow1
+{
+	top: 200px;
+	left: 40%;
+	width: 240px;
+	height: 200px; 
+  visibility: hidden;
+}
+#TextWindow2
+{
+	top: 250px;
+	left: 60%;
+	width: 240px;
+	height: 200px; 
+    visibility: hidden;
+}
+
+/* for interactive text to be indicated */
+.Interactive
+{	
+	cursor: crosshair;
+}
+.Interactive:hover {
+  	color:red;
+}
+
+/* class added to anything that we don't want blocking mouse inputs */
+.nonInteractive
+{
+	pointer-events:none;
+}
+
+/* most of what follows is stuff being positioned around the room */
+#roomLayout
+{
+	width: 1100px;
+	height: 680px;
+    position: relative;	
+	background-color: grey;
+}
+#window
+{
+	left: 450px;
+	top: 30px;
+	position: absolute;
+	z-index: 0;
+}
+#moon
+{
+	left: 450px;
+	top: 30px;
+	position: absolute;
+	z-index: 2;
+}
+#bookcase
+{
+	left: 230px;
+	top: 120px;
+	position: relative;
+	z-index: 0;	
+}
+#bookHovercraft
+{
+	position: absolute;
+	height: 40px;
+	width: 70px;
+	left: 70px;
+	top: 150px;
+	z-index: 20;
+}
+#bookHoverfly
+{
+	position: absolute;
+	height: 40px;
+	width: 70px;
+	left: 30px;
+	top: 215px;
+	z-index: 20;
+}
+#bookJetpack
+{
+	position: absolute;
+	height: 40px;
+	width: 50px;
+	left: 30px;
+	top: 75px;
+	z-index: 20;
+}
+#bookcaseHighlights
+{
+	left: 230px;
+	top: 120px;
+	position: absolute;
+	z-index: 2;
+}
+#door
+{
+	left: 60px;
+	top: 240px;
+	position: absolute;
+	z-index: 0;
+}
+#doorHighlights
+{
+	left: 60px;
+	top: 240px;
+	position: absolute;
+	z-index: 2;
+}
+#desk
+{
+	left: 550px;
+	top: 500px;
+	position: absolute;
+	z-index: 0;
+}
+#deskHighlights
+{
+	left: 550px;
+	top: 500px;
+	position: absolute;
+	z-index: 2;
+}
+#windowLight
+{
+	left: 350px;
+	top: 330px;
+	position: absolute;
+	z-index: 2;
+}
+#flashlightOff
+{
+	
+	left: 500px;
+	top: 380px;
+	position: absolute;
+	z-index: 3;
+}
+
+/* the curtains are z-level 4 so they hide everything in the room, but
+when the Slide class is added to them they slide out of the way */
+#blackoutCurtainLeft
+{
+	left: -550px;
+	position: absolute;
+	z-index: 4;
+}
+#blackoutCurtainLeft.slide
+{
+	animation: slideLeft 12s ;
+	animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(-1000px, 0px);
+  }
+}
+#blackoutCurtainRight
+{
+	left: 450px;
+	position: absolute;
+	z-index: 4;
+}
+#blackoutCurtainRight.slide
+{
+	animation: slideRight 12s ;
+	animation-fill-mode: forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(1000px, 0px);
+  }
+}
 
 
+/* the div that holds the flightlight model and the spotlight (the spotlight is actually
+just a big black box with a hole in the middle) */
+#flashLight {
+	max-height:100%; max-width:100%;
+	position: relative;
+	top: -500px;
+	left: -500px;
+  	display: block;
+	pointer-events: none;
 }
-.square:hover{
-  width: 200px;
-  height: 200px;
-  background-image: url("https://picsum.photos/200/200");
- filter: saturate(10);
+#darkness /* the spotlight */
+{
+	position: absolute;
+	top: -2085px;
+	left: -3690px;
+	z-index: 1;
+	opacity: 1;
 }
-.circle{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image:url("https://picsum.photos/100/100");
-  filter: saturate(0);
+#FL-model
+{
+	top: 50px;
+	left: 40px;
+	position: absolute;
+    z-index: 10;
 }
-.circle:hover{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-image: url("https://picsum.photos/300/300");
-  filter: saturate(10);
+
+/* the text that appears on hover - the bookcase */
+.hoverableText
+{
+	visibility: hidden;
+	pointer-events:all;
+}
+.hoverTextBox
+{
+	font-size: 16px;
+	color: black;
+	position: absolute;
+	padding: 2px;
+    word-wrap: break-word;
+    border: 1px solid DarkSlateGrey;
+	background-color: grey;
+    z-index: 11;
 }
