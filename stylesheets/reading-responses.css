@@ -1,0 +1,94 @@
+/*DECLARING COLOR VARIABLES*/
+:root{
+    --green:#12B831;
+    --dgreen:#12C131;
+    --lightgreen:#22CF0A;
+    --white:#FFFFFF;
+    --blue: #003C8A;
+    --shadow: #808080;
+    --black: #000000;
+}
+/*BASIC STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:var(--black);
+    margin: 40px 200px;
+    background-color: var(--green);
+}
+p{
+    align-content: left; 
+    font-family: edita, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-indent: 30px;
+    line-height: 1.3;
+}
+h1{
+    text-shadow: 1.5px 1.5px var(--shadow);
+    font-style: normal;
+    font-size: 4em;
+    font-family: lust, serif;
+    font-weight: 700;
+    color: var(--white);
+    padding: 20px;
+}
+h2,h3{
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: italic;
+}
+h4{
+    font-family: ivymode, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;  
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--green);
+
+}
+/*MAIN GRID SETTINGS*/
+.section{
+  display:grid;
+  width:100%;
+  height:100%;
+  background-color:var(--white);
+  grid-template: 95px 300px;
+  overflow: hidden;
+  grid-row-gap: 10px;
+  position: relative;
+  padding: 20px;
+}
+/*.section div{
+    border: 2px solid red;
+}*/
+.section-item{
+    background-color: var(--white;
+    border: 10px solid var(--green);
+    color: var(--green);
+    line-height: initial;
+}
+.popup_content {
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 60%;
+  border: 2px solid #444;
+  background: white;
+}
+button{
+background-color: var(--black);
+color: var(--white);
+}
+@media{
+
+}

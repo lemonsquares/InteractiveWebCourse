@@ -1,0 +1,128 @@
+/*DECLARING COLOR VARIABLES*/
+:root{
+    --purple:#6A0CE6;
+    --dpurple:#760DFF;
+    --lightpurple:#9959FF;
+    --white:#FFFFFF;
+    --green: #ABD406;
+    --shadow: #808080;
+}
+/*BASIC STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:var(--white);
+    margin: 30px 200px;
+    background-color: var(--purple);
+    font-family: lust, serif;
+    font-weight: 700;
+}
+h2{
+    font-style: italic;
+}
+h1{
+    text-shadow: 1.5px 1.5px var(--shadow);
+    font-style: normal;
+    font-size: 52px;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+/*MAIN GRID SETTINGS*/
+.section{
+  display:grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 100px 350px 350px;
+  width:100%;
+  height:100%;
+  background-color:var(--purple);
+  overflow: hidden;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+}
+.section-item{
+    background-color: var(--dpurple);
+    border: 10px solid var(--purple);
+    color: var(--white); 
+}
+.top-panel{
+    grid-column: 1 / span 3;
+    font-style: normal;
+}
+.home{
+/*padding: 10px;*/
+}   
+.little-box{
+  width:300px;
+  height:200px; 
+  margin-top: 60px;
+  margin-left: 90px;
+  perspective: 1000px;
+  position: relative;
+}
+/*BOX FLIP TRANSISTION*/
+.inside-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/*TRANSFORMATION SETTINGS*/
+.little-box:hover .inside-box{
+      transform: rotateX(180deg);
+}
+.front-box, .back-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+/*STYLING OF LITTLE INNER BOXES*/
+.front-box{
+    background-color: var(--lightpurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-box{
+    background-color: var(--green);
+    transform: rotateX(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    @media (max-width: 992px)
+    {
+        body{
+            font-size: 10px;
+           margin: 50px;
+        }
+        h1{
+            font-size: 8vw;
+        }
+        h2{
+            font-size: 2vw;
+        }
+        .side-panel{
+            font-size: 4vw;
+            writing-mode: horizontal-tb;
+        }
+        .sections{
+            width: 50%;
+            display: block;
+        }
+        .little-box{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }

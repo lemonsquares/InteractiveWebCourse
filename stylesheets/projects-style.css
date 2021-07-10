@@ -1,0 +1,137 @@
+/*DECLARING COLOR VARIABLES*/
+:root{
+    --pink:#E63756;
+    --dpink:#FF4063;
+    --lightpink:#FF6682;
+    --white:#FFFFFF;
+    --green: #ABD406;
+    --shadow: #808080;
+}
+/*BASIC STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:var(--white);
+    margin: 200px 200px;
+    background-color: var(--pink);
+    font-family: lust, serif;
+    font-weight: 700;
+}
+h2{
+    font-style: italic;
+}
+h1{
+    text-shadow: 1.5px 1.5px var(--shadow);
+    font-style: normal;
+    font-size: 52px;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+a:hover{
+    cursor: not-allowed;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+}
+.center-align{
+    padding-left: 1em;
+}
+/*MAIN GRID SETTINGS*/
+.sections{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 300px;
+    width:100%;
+    height:100%;
+    background-color:var(--pink);
+    overflow: hidden;
+    grid-column-gap: 10px;
+    position: relative;
+}
+.section-item{
+    width: 100%;
+    height: 100%;  
+    border-radius: 5px;
+    background-color: var(--dpink);
+    filter: drop-shadow(5px 5px 10px #000);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.top-panel{
+    grid-column: 1 / span 3;
+    font-style: normal;
+}
+.home{
+
+}   
+.inside-box{
+    width:200px;
+    height:200px; 
+    border-radius: 5px;
+    background-color: var(--lightpink);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+/*BOX FLIP TRANSISTION*/
+/*.inside-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }*/
+    /*TRANSFORMATION SETTINGS*/
+/*.little-box:hover .inside-box{
+      transform: rotateX(180deg);
+}
+.front-box, .back-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    }*/
+    /*STYLING OF LITTLE INNER BOXES*/
+/*.front-box{
+    background-color: var(--lightpink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-box{
+    background-color: var(--green);
+    transform: rotateX(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }*/
+
+@media (max-width: 992px){
+    body{
+        font-size: 10px;
+        margin: 50px;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .side-panel{
+        font-size: 4vw;
+        writing-mode: horizontal-tb;
+    }
+    .sections{
+        width: 50%;
+        display: block;
+    }
+    .inside-box{
+        margin: 20px 10px;
+    }
+}

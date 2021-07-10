@@ -1,0 +1,111 @@
+/*DECLARING COLOR VARIABLES*/
+:root{
+    --blue:#003C8A;
+    --dblue:#00478A;
+    --lightblue: #1F78ED;
+    --white:#FFFFFF;
+    --green: #ABD406;
+    --shadow: #808080;
+}
+/*BASIC STYLING*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+canvas{
+    display: block;
+    margin: 0px;
+}
+body{
+    margin: 90px 50px;
+    background-color: var(--blue);
+    font-family: lust, serif;
+    font-weight: 700;
+    position: relative;
+}
+h2{
+    font-style: italic;
+    font-size: 1.5em;
+}
+h1{
+    text-shadow: 1.5px 1.5px var(--shadow);
+    font-style: normal;
+    font-size: 52px;
+    color: var(--white);
+}
+h2:hover{
+    color: var(--green);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+}
+/*MAIN GRID SETTINGS*/
+.sections{
+  display:grid;
+  grid-template-columns: 130px 300px 300px;
+  grid-template-rows: 300px 300px;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+}
+.section-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--dblue);
+    filter: drop-shadow(5px 5px 10px #000);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-panel{
+    grid-row: 1 / span 3;
+    writing-mode: vertical-rl;
+    font-style: normal;
+}
+.inside-box{
+    width:200px;
+    height:200px; 
+    border-radius: 5px;
+    background-color: var(--lightblue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.center-align{
+    padding-left: 1em;
+}
+@media (max-width: 992px){
+    body{
+        font-size: 10px;
+        margin: 50px;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .side-panel{
+        font-size: 4vw;
+        writing-mode: horizontal-tb;
+    }
+    .sections{
+        width: 50%;
+        display: block;
+    }
+    .inside-box{
+    margin: 20px 10px;
+    }
+}
